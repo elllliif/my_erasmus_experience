@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        
+        
+        
+      
+    </head>
+        
+
+    <body>
+
+        
+      
+   <div class="navbar" id="myTopnav" >
+       
+        <a id="nav" href="#"><img class="logo" src="image/a.png">DiaryOfErasmus</a>
+        <a href="contact.html"> Contact</a>
+        <a href="myviews.html"> MyViews</a>
+        <a href="places.html"> Places</a>
+        <a class = "active" href="#about"> About</a>
+        <a href="index.html">Home</a>
+    
+            
+    </div>
+    
+    <div class="background">
+    
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container" >
+
+        
+            <div class="mySlides fade">
+            
+            <img src="image/buda.jpg">
+            
+            </div>
+        
+            <div class="mySlides fade">
+            
+            <img src="image/venedik.jpg">
+            
+            </div>
+        
+            <div class="mySlides fade">
+           
+            <img src="image/1.jpg">
+            
+            </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              
+              slides[slideIndex - 1].style.display = "block";
+            }
+            
+        </script>
+
+        <div class="card-container">
+            <div class="cardx" id="card1">
+              <div class="front">Who Am I?</div>
+              <div class="back">"Hello, my name is Elif. I am a software engineering student currently pursuing my studies. I have a great passion for programming and technology, and I am always eager to learn and explore new concepts in the field. Currently, I am enrolled in an Erasmus program in Poland, which has been an amazing experience for me. "</div>
+            </div>
+            <div class="cardx" id="card2">
+              <div class="front">My Mission</div>
+              <div class="back">During my Erasmus experience, I aimed to learn, explore, and grow. My personal mission is to use what I have learned and experienced to create opportunities to discover different cultures and develop myself, in order to contribute to making the world a better place. Additionally, I try to inspire others by sharing Erasmus' values and learning experience with them.</div>
+            </div>
+            <div class="cardx" id="card3">
+              <div class="front">My Story</div>
+              <div class="back">During my time in Poland, I have had the chance to collaborate with fellow students on various projects and enhance my programming skills. The academic environment here has been inspiring, and I have been exposed to different teaching methodologies and approaches, which have enriched my learning experience.</div>
+            </div>
+          </div>
+    
+    
+        
+       
+        
+    </div>
+    
+          
+    
+        
+    </body>
+</html>

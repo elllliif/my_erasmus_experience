@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        
+      
+    </head>
+        
+
+    <body>
+
+        
+      
+   <div class="navbar" id="myTopnav" >
+       
+        <a id="nav" href="#"><img class="logo" src="image/a.png">DiaryOfErasmus</a>
+        <a href="contact.html"> Contact</a>
+        <a href="myviews.html"> MyViews</a>
+        <a class="active" href="#places"> Places</a>
+        <a href="about.html"> About</a>
+        <a href="index.html">Home</a>
+       
+    </div>
+
+    <div class="back-ground">
+        <div class="flag-card">
+
+          <div class="card" onclick="goToMyViews('Krakow');">
+            <img src="image/Krakow.png" class="flag">
+            <p class="country-name">Krakow</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Prag');">
+            <img src="image/Prag.png" class="flag">
+            <p class="country-name">Prag</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Vienna');">
+            <img src="image/Vienna.png" class="flag">
+            <p class="country-name">Vienna</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Budapest');">
+            <img src="image/Budapest.png"  class="flag">
+            <p class="country-name">Budapest</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Warsaw');">
+            <img src="image/Warsaw.png"  class="flag">
+            <p class="country-name">Warsaw</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Rzeszow');">
+            <img src="image/Rzeszow.png"  class="flag">
+            <p class="country-name">Rzeszow</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Berlin');">
+            <img src="image/Berlin.png"  class="flag">
+            <p class="country-name">Berlin</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Munich');">
+            <img src="image/Munich.png"  class="flag">
+            <p class="country-name">Munich</p>
+          </div>
+
+          <div class="card" onclick="goToMyViews('Frankfurt');">
+            <img src="image/Frankfurt.png"  class="flag">
+            <p class="country-name">Frankfurt</p>
+          </div>
+
+        </div>
+
+        <script>
+
+            function goToMyViews(country) {
+                switch (country) {
+                  case 'Krakow':
+                    window.location.href = 'myviews.html#Krakow';
+                    break;
+                  case 'Prag':
+                    window.location.href = 'myviews.html#Prag';
+                    break;
+                  case 'Vienna':
+                    window.location.href = 'myviews.html#Vienna';
+                    break;
+                  case 'Budapest':
+                    window.location.href = 'myviews.html#Budapest';
+                    break;
+                  case 'Warsaw':
+                    window.location.href = 'myviews.html#Warsaw';
+                    break;
+                  case 'Rzeszow':
+                    window.location.href = 'myviews.html#Rzeszow';
+                    break;
+                  case 'Berlin':
+                    window.location.href = 'myviews.html#Berlin';
+                    break;
+                  case 'Munich':
+                    window.location.href = 'myviews.html#Munich';
+                    break;
+                  case 'Frankfurt':
+                    window.location.href = 'myviews.html#Frankfurt';
+                    break;
+                  default:
+                    break;
+                }
+              }
+          </script>
+
+    </div>
+
+    
+  
+
+   
+
+   
+
+
+   
+
+   
+
+    
+    
+    
+   
+        
+            
+    </body>
+</html>
